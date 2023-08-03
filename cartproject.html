@@ -1,0 +1,282 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="wstyle.css">
+
+    <style>
+
+.a{
+text-decoration: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header_bar{
+    padding:0.5%;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: var(--text-dark--);
+    color:var(--white--);
+}
+.nav_container{
+   padding:2 rem 1rem;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.nav_logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:var(--text-dark--);
+}
+
+.nav_links{
+    list-style: none;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.link a{
+    padding:0 .5rem;
+    font-size:.9rem;
+    font-weight: 600;
+    color:var(--text-light);
+    transition: 0.3s;
+}
+
+.link a:hover{
+    color:var(--text-dark);
+}
+
+.nav_icons{
+    display:flex;
+    gap:1rem;
+}
+
+.nav_icons span{
+    font-size: 1.25rem;
+    cursor:pointer;
+}
+
+header {
+    margin-top: 0rem;
+    background-color: var(--primary-color);
+
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+gap: 2rem;
+} 
+
+.cart-page{
+    margin:80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color:#fff;
+    background-color: #ff523b;
+    font-weight: normal;
+
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width:40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+
+
+}
+td img{
+    width: 90px;
+    height: 90px;
+    margin-right:10px ;
+
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width:100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+        </style>
+  </head>
+ <body>
+    <div class="header_bar">WELCOME TO TRENDY TRENDS</div><hr>
+    <nav class="section_container nav_container">
+     <a href="#" class="nav_logo">TRENDY TRENDS</a>
+     <ul class="nav_links">
+       <li class="link"><a href="#">LOGIN</a></li>
+       <li class="link"><a href="#">HOME</a></li>
+       <li class="link"><a href="#">CART</a></li>
+       <li class="link"><a href="#">WISHLIST</a></li>
+       <li class="link"><a href="#">ORDER</a></li>
+     </ul>
+     <div class="nav_icons">
+       <span><i class="ri-shield-user-line"></i></span>
+       <div class="search">
+         <input type="search" placeholder="searchbar....">
+         <i class="fa-solid fa-magnifying-glass"></i>
+     </div>
+       <span><i class="ri-search-eye-line"></i></span>
+       <span><i class="ri-shopping-cart-fill"></i></span>
+     </div>
+    </nav><hr>
+
+
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>PRODUCT</th>
+            <th> QUANTITY</th>
+            <th> SUB-TOTAL</th>
+        </tr>
+        <tr>
+            <td> 
+                <div class="cart-info">
+                    <img src="salwar.webp">
+                    <div>
+                        <p>KURTA SET</p>
+                        <small>Price: ₹1,699</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>₹1,699</td>
+        </tr>
+        <tr>
+            <td> 
+                <div class="cart-info">
+                    <img src="shoess.png">
+                    <div>
+                        <p>SHOES</p>
+                        <small>Price: ₹799</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+
+
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>₹799</td>
+        </tr>
+        <tr>
+        <td> 
+            <div class="cart-info">
+                <img src="black-kurta.webp">
+                <div>
+                    <p>KURTA </p>
+                    <small>Price: ₹1,449</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+
+
+        </td>
+        <td> <input type="number" value="1"></td>
+        <td>₹1,449</td>
+    </tr>
+    <tr>
+        <td> 
+            <div class="cart-info">
+                <img src="ketchup.jpg">
+                <div>
+                    <p>KETCHUP </p>
+                    <small>Price: ₹99</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+
+
+        </td>
+        <td> <input type="number" value="1"></td>
+        <td>₹99</td>
+    </tr>
+    <tr>
+        <td> 
+            <div class="cart-info">
+                <img src="microwave.jpg">
+                <div>
+                    <p>MICROWAVE </p>
+                    <small>Price: ₹5,990</small>
+                    <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+
+
+        </td>
+        <td> <input type="number" value="1"></td>
+        <td>₹5,990</td>
+    </tr>
+   
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>
+                    SUBTOTAL
+                </td>
+                <td>₹10,135</td>
+            </tr>
+            <tr>
+                <td>
+                    TAX
+                </td>
+                <td>₹200</td>
+            </tr>
+        
+            <tr>
+                <td>
+                    TOTAL
+                </td>
+                <td>₹10,335</td>
+            </tr>
+        
+
+
+        </table>
+
+    </div>
+</div>
+</body>
+</html>
