@@ -1,0 +1,407 @@
+
+<html>
+    <head>
+
+
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@200;300;400;500&display=swap');
+
+:root{
+    --primary-color:#f1faff;
+    --text-dark:black;
+    --text-light:#6b7280;
+    --extra-light:#fbfbfb;
+    --white:#ffffff;
+    --max-width:1200px;
+
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.section_container{
+    max-width: var(--max-width);
+    margin:auto;
+    padding:5rem irem;
+}
+.section_title{
+    padding-bottom: .5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color:var(--text-dark);
+    position:relative;
+}
+
+.section_title::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    height:3px;
+    width:75px;
+    background-color: var(--text-dark--);
+}
+.btn{
+    padding: 0.75rem 2rem;
+    font-size: 0.8rem;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    transition: 0.35;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width:100%;
+    display:block;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header_bar{
+    padding:0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: var(--text-dark--);
+    color:var(--white--);
+}
+
+.nav_container{
+   padding:2 rem 1rem;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.nav_logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:var(--text-dark--);
+}
+
+.nav_links{
+    list-style: none;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.link a{
+    padding:0 .5rem;
+    font-size:.9rem;
+    font-weight: 600;
+    color:var(--text-light);
+    transition: 0.3s;
+}
+
+.link a:hover{
+    color:var(--text-dark);
+}
+
+.nav_icons{
+    display:flex;
+    gap:1rem;
+}
+
+.nav_icons span{
+    font-size: 1.25rem;
+    cursor:pointer;
+}
+
+header {
+    margin-top: 5rem;
+    background-color: var(--primary-color);
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.header_content p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.header_content h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--text-dark)
+}
+
+.header_content .btn {
+    background-color: vae(--text-dark);
+    color: var(--white);
+}
+
+.header_image{
+    position:relative;
+}
+.header__image img{
+    max-width:400px;
+    position: absolute;
+    bottom:-5rem;
+}
+.container_container{
+   position: relative;
+}
+.collection__container img{
+    max-width:400px;
+    margin:auto;
+}
+.collection__content{
+    position:absolute;
+    top:50%;
+    left:2 rem;
+    transform:translateY(-50%);
+}
+.collection__content .section_title{
+    margin-bottom: 2rem;
+}
+.collection__content p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.collection__content h4{
+    font-size:1.2rem;
+    font-weight: 600;
+    margin-bottom:1rem;
+}
+.collection__content .btn{
+    border:1px solid var(--text-dark);
+    color:var(--text-dark);
+    background-color: var(--white);
+}
+.collection__content .btn:hover{
+    background-color: var(--text-dark);
+    color:var(--white);
+}
+.sale__gird{
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+    gap:2 rem;
+}
+.sale__card{
+    position:absolute;
+    overflow:hidden;
+}
+.sale__content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    color:var(--white);
+    text-align: center;
+}
+.sale__title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.sale__title span{
+    font-size:2.5rem;
+}
+.sale__subtitle{
+    font-size:1rem;
+}
+.sale__btn{
+    margin-top:2 rem;
+    color:var(--white);
+    background-color: var(--text-dark);
+}
+.sale__card::before{
+    position:absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:-100%;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.sale__card:hover .sale__btn{
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+.musthave__nav{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap:2rem;
+    flex-wrap: wrap;
+    margin-bottom:2rem;
+}
+.musthave_nav a{
+    font-size: 1rem;
+    font-weight:600;
+    color:var(--text-light);
+    transition: 0.35;
+}
+.musthave__nav a:hover{
+    color:var(--text-dark);
+}
+.musthave__grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+}
+.musthave__card{
+    display:grid;
+    gap:0.5rem;
+    color:var(--text-dark);
+}
+.musthave__card h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.musthave__card p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.musthave__card p del{
+    font-weight: 400;
+    color:var(--text-light);
+}
+      </style>
+
+
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+       <link href="stylesheet" href="style.css">
+       <Title>Trendy Trends</Title>
+    </head>
+    
+    <body>
+       <div class="header_bar">WELCOME TO TRENDY TRENDS</div><hr>
+       <nav class="section_container nav_container">
+        <a href="#" class="nav_logo">TRENDY TRENDS</a>
+        <ul class="nav_links">
+          <li class="link"><a href="#">LOGIN</a></li>
+          <li class="link"><a href="#">HOME</a></li>
+          <li class="link"><a href="#">CART</a></li>
+          <li class="link"><a href="#">WISHLIST</a></li>
+          <li class="link"><a href="#">ORDER</a></li>
+        </ul>
+        <div class="nav_icons">
+          <span><i class="ri-shield-user-line"></i></span>
+          <div class="search">
+            <input type="search" placeholder="searchbar....">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+          <span><i class="ri-search-eye-line"></i></span>
+          <span><i class="ri-shopping-cart-fill"></i></span>
+        </div>
+       </nav><hr>
+       <header>
+        <div class="section_container header_container">
+          <div class="header__content">
+            <p>EXTRA 55% OFF IN SPRING SALE</p>
+            <h1>Discover & Shop<br>The Trend Ss19</h1>
+            <button class="btn"><b>SHOP NOW</b></button>
+          </div>
+          
+        </div>
+       </header>
+
+       <section class="section__container musthave__container">
+        <h2 class="section__title">Must Have</h2>
+        <div class="musthave__nav">
+          <a href="#">ALL</a>
+          <a href="#">MEN</a>
+          <a href="#">FEMALE</a>
+          <a href="#">KIDS</a>
+          <a href="#">GROCERY</a>
+          <a href="#">KICTCHEN</a>
+          <a href="#">HOME APPLIANCES</a>
+        </div>
+        <div class="musthave__grid">
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\1_512.webp" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>BASIC LONG SLEEVE T-SHIRT</h4>
+            <p><del>$45.00</del>$75.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\81cg0chZV6L.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>KICTCHEN CONTAINERS</h4>
+            <p><del>$45.00</del>$85.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\Best-Womens-Perfumes-1.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>PERFUMES</h4>
+            <p><del>$45.00</del>$65.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\bf3c74e639d65ca7a54aaabbd09d68d2.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>GYM WEAR</h4>
+            <p><del>$45.00</del>$55.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\718O88mbg9L._SY625_.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>HIGH HEELS SANDALS</h4>
+            <p><del>$55.00</del>$95.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\Gucci-Bags.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>GUCCI BAG</h4>
+            <p><del>$65.00</del>$85.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\MacBook-Air-Keyboard-and-Ports-10302018_inline.jpg.large.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>MAC BOOK AIR</h4>
+            <p><del>$35.00</del>$65.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\product-jpeg-500x500.webp" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>GUCCI BELT</h4>
+            <p><del>$45.00</del>$95.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\dkvjc_512.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>SPORTS SHOES</h4>
+            <p><del>$45.00</del>$80.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\202748775-1-white.webp" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>NIKE T-SHIRT</h4>
+            <p><del>$30.00</del>$65.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\71IPFP9WJIL._AC_UF1000,1000_QL80_.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>AIRPODS</h4>
+            <p><del>$45.00</del>$75.00</p>
+          </div>
+          <div class="musthave__card">
+            <img src="C:\Users\legion\OneDrive\Desktop\Project\BLFJGA2320BLACK-1-_1.jpg" 
+            width="350px" height="400px" alt="musthave"/>
+            <h4>JEANS</h4>
+            <p><del>$40.00</del>$85.00</p>
+          </div>
+        </div>
+       </section>
+    </body>
+  </html>
